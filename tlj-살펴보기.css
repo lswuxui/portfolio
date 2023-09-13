@@ -1,0 +1,553 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    /* outline: 1px solid red; */
+}
+ul, li{
+    list-style: none;
+}
+a{text-decoration: none;}
+body{
+    background-color: #f7f0da;
+    position: relative;
+    min-width: 1000px;
+}
+header{
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 147px;
+    background-color: #0d4633;
+    z-index: 15;
+}
+.top_hd{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+.logo {
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    margin-left: -144px;
+    width: 286px;
+    height: 37px;
+    z-index: 0;
+}
+/* --------------------sns 아이콘 ---------------------------*/
+.top_hd .sns {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 200px;
+    z-index: 0;
+}
+.top_hd .sns  a {
+    float: left;
+    display: inline-block;
+    margin-right: 29px;
+    background: url(/img/tlj/common.png) left top no-repeat;
+    font-size: 0;
+    color: #32271d;
+}
+.top_hd .sns .facebook {
+    width: 9px;
+    height: 19px;
+    background-position: -20px -45px;
+}
+
+.top_hd .sns .twitter {
+    width: 12px;
+    height: 19px;
+    background-position: -39px -45px;
+}
+
+.top_hd .sns .instagram {
+    width: 19px;
+    height: 19px;
+    background-position: -20px -104px;
+    margin-right: 0;
+}
+/* --------------------------------------------------- */
+/* ----------------------검색 영역--------------------- */
+.search {
+    position: absolute;
+    left: 160px;
+    top: 39px;
+    width: 220px;
+    z-index: 0;
+}
+legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.search .btn_close {
+    display: none;
+}
+/* ---------------------------------------------------- */
+/* ------------------오른쪽 상단 부분---------------------- */
+.tnb > li > a {
+    float: left;
+    display: inline-block;
+    margin: 6px 0 0 12px;
+    padding-bottom: 1px;
+    background: url(/img/tlj/menu.png) left top no-repeat;
+    font-size: 0;
+    color: #32271d;
+    overflow: hidden;
+}
+.tnb {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    z-index: 0;
+}
+.tnb .tnb_store {
+    width: 42px;
+    height: 13px;
+    background-position: 0px 0px;
+}
+.tnb .tnb_customer {
+    width: 43px;
+    height: 13px;
+    background-position: 0px -40px;
+}
+.tnb .tnb_recruit {
+    width: 68px;
+    height: 13px;
+    background-position: 0px -120px;
+}
+.tnb .tnb_login {
+    width: 53px;
+    height: 24px;
+    margin: 0 0 0 8px;
+    background-position: -300px -40px;
+    border: 0 none;
+    z-index: 0;
+}
+.tnb .tnb_foundation {
+    position: absolute;
+    right: -75px;
+    top: -49px;
+    width: 63px;
+    height: 68px;
+    background: url(/img/tlj/menu_point.png) no-repeat 0 0;
+}
+/* ----------------------------------------------------------- */
+/* ----------------------네비부분------------------------------- */
+.nav .gnb_brand .depth1:hover{background-position: -300px 0px;}
+.nav .gnb_bread .depth1:hover{background-position: -300px -100px;}
+.nav .gnb_product .depth1:hover{background-position: -300px -50px;}
+.nav .gnb_event .depth1:hover{background-position: -300px -150px;}
+.nav .gnb_shop .depth1:hover{background-position: -300px -550px;}
+.nav {
+    position: relative;
+    left: 0;
+    top: 104px;
+    width: 100%;
+    height: 43px;
+    background: transparent;
+    text-align: center;
+    z-index: 50;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) ;
+}
+
+.nav:hover{
+    height: 193px;
+    background: url(/img/tlj/bg_gnb_over.png) 0% 100% repeat;
+    transition-duration: 0.3s;
+}
+.all:hover .depth2{
+    display: block;
+    height: 193px;
+    width: 100%;
+}
+.nav > ul {
+    display: inline-block;
+    width: 1000px;
+}
+.all > li {
+    width: 20%;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0px;
+}
+.depth2{
+    display: none;
+    overflow: hidden;
+    height: 0;
+    top: 40px;
+    right: 0;
+    z-index: 10;
+} 
+.depth2 > li{
+    display: flex;
+    justify-content:center;
+    font-size: 12px;
+    margin: 15px;
+}
+.depth2 a{
+    opacity: 0.7;
+    color: #fff;
+}
+.nav .depth1 {
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    padding: 30px 0 15px 0;
+    background: url(/img/tlj/gnb.png) left top no-repeat;
+    font-size: 0;
+}
+.nav .depth1:first-child {
+    margin-left: 0;
+}
+.nav .gnb_brand .depth1 {
+    width: 90px;
+    background-position: 0px 0px;
+}
+.nav .gnb_bread .depth1 {
+    width: 120px;
+    background-position: 0px -100px;
+}
+.nav .gnb_product .depth1 {
+    width: 63px;
+    background-position: 0px -50px;
+}
+.nav .gnb_event .depth1 {
+    width: 97px;
+    background-position: 0px -150px;
+}
+.nav .gnb_shop .depth1 {
+    width: 178px;
+    background-position: 0px -550px;
+}
+/* ---------------------------------------------------------------- */
+/* -------------------------상단----------------------------------- */
+.page_top{
+    position: relative;
+    top: 147px;
+    left: 0;
+    margin: 0 auto;
+    width: 1000px;
+    z-index: 0;
+}
+.path{
+    position: absolute;
+    top: 34px;
+    right: 0;
+    padding: 14px 0 10px 0;
+    text-align: right;
+    z-index: 1;
+}
+.path li{display: inline-block;}
+.path a:first-child{
+    padding-left: 0;
+    background: none;
+}
+.path a{
+    display: inline-block;
+    padding-left: 17px;
+    height: 14px;
+    font-size: 14px;
+    color: #666;
+    background: url(/img/착한빵/arrow_path.png) 7px 3px no-repeat;
+}
+/* ----------------------------------------------------------------- */
+/* ------------------메인-------------------------------------------- */
+.container{padding: 230px 0 50px 0;}
+#content{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.tlj-wrap .look-intro{text-align: center;}
+.tlj-wrap .look-intro p{
+    position: relative;
+    padding-top: 20px;
+    margin-top: 35px;
+    line-height: 28px;
+    font-size: 22px;
+    color: #000;
+}
+.tlj-wrap .look-intro p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -67px;
+    width: 132px;
+    height: 1px;
+    background-color: #bab1a4;
+}
+em{
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    color: #f26b24;
+}
+.look-cont p.summary{
+    position: relative;
+    margin-bottom: 23px;
+    line-height: 23px;
+    font-size: 13px;
+    color: #444;
+    letter-spacing: -0.01em;
+}
+/* ------------------------------------------------------------------ */
+/* --------------------로고와 엠블럼---------------------------------- */
+.look-cont h3:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 4px;
+    height: 19px;
+    background-color: #2f6d56;
+}
+.look-cont h3{
+    position: relative;
+    padding-left: 17px;
+    margin: 63px 0 17px 0;
+}
+.look-cont .thumb-img{text-align: center;}
+.look-cont .ntn1 p.summary{
+    padding-top: 20px;
+    margin: 35px 0 0 0;
+    text-align: center;
+}
+.look-cont .ntn1 p.summary::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -67px;
+    width: 132px;
+    height: 1px;
+    background-color: #bab1a4;
+}
+/* ------------------------------------------------------------------ */
+/* -------------------------상징컬러---------------------------------- */
+.look-cont .ntn2 p.summary{
+    padding-top: 20px;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+.look-cont .ntn2 p.summary::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -67px;
+    width: 132px;
+    height: 1px;
+    background-color: #bab1a4;
+}
+/* ------------------------------------------------------------------- */
+/* ---------------------스토어----------------------------------------- */
+.look-cont ul.thumb-img{
+    margin: 0 auto;
+    width: 783px;
+}
+.look-cont .ntn4 ul li{margin-bottom: 7px;}
+.ntn4 ul li.ntn-3{float: left;}
+.ntn4 ul li.ntn-4{float: right;}
+.ntn4 ul li.ntn-5{float: left;}
+.ntn4 ul li.ntn-6{
+    float: right;
+    margin-bottom: 70px;
+}
+/* -------------------------------------------------------------------- */
+/* --------------------푸터-------------------------- */
+footer{
+    width: 100%;
+    height: 280px;
+    margin-top: inherit;
+    overflow: hidden;
+    min-height: 272px;
+}
+.family_site{
+    width: 100%;
+    height: 67px;
+    border-top: 1px solid #cac0b6;
+    background-color: #f7f0da;
+}
+.family_site .buttonWrap{
+    position: relative;
+    width: 1070px;
+    margin: 0 auto;
+}
+.family_site .wrapList{
+    position: relative;
+    overflow: hidden;
+    width: 1020px;
+    height: 56px;
+    margin: 0 auto;
+}
+.family_site ul{
+    overflow: hidden;
+    margin: 0 auto;
+    height: 66px;
+}
+.family_site li{padding-top: 8px;}
+.family_site a{
+    float: left;
+    margin: 0 5px;
+    background: url(/img/tlj/common.png) left top no-repeat;
+    font-size: 0;
+}
+.family_site .Cj_foodville{
+    width: 55px;
+    height: 27px;
+    margin-top: 5px;
+    background-position: -590px -266px;
+}
+.family_site .vips{
+    width: 40px;
+    height: 24px;
+    margin-top: 10px;
+    background-position: -650px -268px;
+}
+.family_site .the_place{
+    width: 47px;
+    height: 23px;
+    margin-top: 6px;
+    background-position: -701px -333px;
+}
+.family_site .cheil{
+    width: 59px;
+    height: 14px;
+    margin-top: 10px;
+    background-position: -761px -338px;
+}
+.family_site .ngrill{
+    width: 58px;
+    height: 13px;
+    margin-top: 13px;
+    background-position: -670px -474px;
+}
+.family_site .ntower{
+    width: 68px;
+    height: 30px;
+    margin-top: 6px;
+    background-position: -1127px -665px;
+}
+/* -------------------------------------------------------------------------- */
+/* ----------------------------------푸터2------------------------------------ */
+.footerWrap{
+    height: 100%;
+    background-color: #2e2f2e;
+    padding-bottom: 40px;
+    font-size: 12px;
+}
+.footerWrap > ul{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.footerWrap > ul > li{clear: both;}
+.fnb li:first-child{
+    padding-left: 0;
+    background: none;
+}
+.fnb li{
+    float: left;
+    padding-left: 24px;
+    background: url(/img/tlj/common.png) -531px -60px no-repeat;
+    margin-bottom: 10px;
+}
+/* .fnb a{display: inline-block;} */
+.fnb .company{
+    width: 49px;
+    height: 13px;
+    background-position: -10px -68px;
+}
+.fnb .recruit{
+    width: 76px;
+    height: 13px;
+    background-position: -83px -68px;
+    padding: 0;
+}
+.fnb .foundation{
+    width: 50px;
+    height: 13px;
+    background-position: -255px -68px;
+}
+.fnb .clause{
+    width: 49px;
+    height: 13px;
+    background-position: -182px -68px;
+}
+.fnb .privacy{
+    width: 100px;
+    height: 13px;
+    background-position: -328px -68px;
+}
+.fnb .email{
+    width: 113px;
+    height: 13px;
+    background-position: -451px -68px;
+}
+.fnb .ethic{
+    width: 75px;
+    height: 13px;
+    background-position: -586px -68px;
+}
+.fnb .legal{
+    width: 49px;
+    height: 13px;
+    background-position: -685px -68px;
+}
+.fnb .sitemap2{
+    width: 50px;
+    height: 13px;
+    background-position: -756px -68px;
+}
+footer .info .business-name{float: left;}
+.fot{padding-top: 30px;}
+.footerWrap .info{
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: 20px;
+    font-size: 12px;
+}
+.footerWrap .copyright{
+    width: auto;
+    height: auto;
+    margin-top: 18px;
+    background-image: none;
+    color: #e4dfd5;
+    font-size: 12px;
+}
+.footerWrap .info address{
+    display: block;
+    height: 20px;
+    vertical-align: top;
+}
+.footerWrap .info img{vertical-align: top;}

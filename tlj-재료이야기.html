@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재료이야기</title>
+    <link rel="stylesheet" href="/css/tlj-재료이야기.css">
+</head>
+<body>
+    <header>
+        <div class="gnb_dim"></div>
+        <!-- <div class="gnb_dim2" style="display: none; height: 0px; overflow: hidden;"></div> -->
+        <div class="top_hd">
+            <h1 class="logo"><a href="http://127.0.0.1:5500/html/tlj-3.html" target="_blank" ><img src="/img/tlj/logo.png" alt="logo"></a></h1>
+            <ul class="sns">
+                <li>
+                    <a href="#" class="facebook" target="_blank" title="새창열림">페이스북</a>
+                    <a href="#" class="twitter" target="_blank" title="새창열림">트위터</a>
+                    <a href="#" class="instagram" target="_blank" title="새창열림">인스타그램</a>
+                </li>
+            </ul>
+            <fieldset class="search">
+                <legend>제품검색</legend>
+                <form name="srch" method="get" action="#" onsubmit="return srchCheck(srch)">
+                    <label for="prod_name">
+                      <input type="text" id="prod_name" name="prod_name" value style="width: 0px; display: none;" class="ipt02" autocomplete="off" title="제품명 입력" placeholder="제품명을 입력해 주세요.">
+                    </label>
+                    <a href="#" id="btnSearch" class="btn_search" onclick="prodSrch(srch); return false">
+                        <img src="/img/tlj/search.png" title="검색" alt="검색">
+                    </a>
+                    <span class="btn_close">
+                        <a href="#" title="닫기">닫기</a>
+                    </span>
+                </form>
+            </fieldset>
+            <ul class="tnb">
+                <li style = "/*display:none;*/">
+                    <a href="#" class="tnb_store">매장안내</a>
+                    <a href="#" class="tnb_customer">고객센터</a>
+                    <a href="#" class="tnb_recruit">기사 채용안내</a>
+                    <a href="#" class="tnb_login">로그인</a>
+                    <a href="#" class="tnb_foundation">창업안내</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul class="all">
+                <li class="gnb_brand">
+                    <a id="skip_gnb" class="depth1"  href="#">브랜드 스토리</a>
+                    <ul class="depth2">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EC%9E%AC%EB%A3%8C%EC%9D%B4%EC%95%BC%EA%B8%B0.html" target="_blank">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EB%9D%BC%EB%9C%B0%EB%A6%AC%EC%97%90.html" target="_blank">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EC%B0%A9%ED%95%9C%EB%B9%B5.html" target="_blank">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 &amp; 공지사항</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_bread">
+                    <a class="depth1" href="#">새로워진 뚜레쥬르</a>
+                    <ul class="depth2">
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
+                        <li><a href="#" class="">갓 구운 빵 시간표</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_product">
+                    <a class="depth1" href="#">제품 안내</a>
+                    <ul class="depth2">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&amp;스낵</a></li>
+                        <li><a href="#">음료</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_event">
+                    <a class="depth1" href="#">이벤트&amp;멤버십</a>
+                    <ul class="depth2">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_shop">
+                    <a class="depth1" href="#">뚜레쥬르 앱&amp;온라인 쇼핑몰</a>
+                    <ul class="depth2" >
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃&amp;케이크 택배 배송</a></li>
+                        <li><a class="last" href="#">대량 구매 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="page_top">
+        <div class="path">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">브랜드 스토리</a>
+                    <a>재료이야기</a>
+                </li>
+            </ul>
+        </div>
+        <h2 class="page_title">
+            <span class="tit_summary">재료이야기 개요</span>
+        </h2>
+    </div>
+    <div class="container" id="skip_cnt">
+        <div class="content">
+            <div class="ingredient">
+                <ul>
+                    <li class="img"><img src="/img/재료/img_ingredient01_1.jpg" alt="밀가루"></li>
+                    <li class="tit"><img src="/img/재료/txt_ingredient01_1.png" alt="전용 밀가루"></li>
+                    <li class="txt">
+                        뚜레쥬르에서는 빵의 개성있는 식감을 잘 살려주는<br>
+                        베이커리전용 밀가루를 사용한 제품도<br>
+                        만나보실 수 있습니다. CJ제일제당 60년 제분기술을<br>
+                        노하우로 집결하여 만든 베이커리 전용 Only One<br>
+                        밀가루는 패스트리 전용밀가루, 식빵 전용밀가루 등<br>
+                        빵마다의 특성을 살리는 밀가루가 따로 있어 패스트리는<br>
+                        더욱 바삭하게, 식빵은 더욱 촉촉하고 쫄깃하게 만들어<br>
+                        줍니다.
+                    </li>
+                    <li class="btn-area"><a href="#" class="btn">자세히보기</a></li>
+                </ul>
+                <ul>
+                    <li class="img"><img src="/img/재료/img_ingredient01_2.jpg" alt="천일염"></li>
+                    <li class="tit"><img src="/img/재료/txt_ingredient01_2.png" alt="신안 천일염"></li>
+                    <li class="txt">
+                        빵에 아주 조금 들어가지만 없어서는 안되는 중요한 재료<br>
+                        소금은 대한민국 명품갯벌이 만들어낸 천일염 CJ제일제당<br>
+                        '오천년의 신비'를 사용합니다. 5,000년 동안의 시간이<br>
+                        만들어낸 생명력을 간직한 갯벌, 그 갯벌 위의 뜨거운<br>
+                        태양아래 필요한 시간만큼 충분히 두어 귀하게 얻고, 6단계<br>
+                        까다로운 공정을 거친 꺠끗한 천일염 이라야 비로소<br>
+                        뚜레쥬르 빵에 사용될 수 있습니다.<br>
+                        *일부 제품, 매장별로 사용하는 소금이 상이할 수 있습니다.
+                    </li>
+                    <li class="btn-area"><a href="#" class="btn">자세히보기</a></li>
+                </ul>
+                <ul>
+                    <li class="img"><img src="/img/재료/img_ingredient01_3.jpg" alt="자연재료"></li>
+                    <li class="tit"><img src="/img/재료/txt_ingredient01_3.png" alt="순수한 자연재료"></li>
+                    <li class="txt">
+                        뚜레쥬르는 빵의 맛을 더 풍부하게 하는 우유, 치즈, 채소, 과일 등도 자연의 순수함을 그대로 간직한 재료들을 선별하여 사용합니다.<br>
+                        우유는 깨끗하고 건강한 환경에서 만들어 엄격한 기준을 통과한 유기농 우유를, 치즈는 꼭 필요한 것만을 첨가해<br>
+                        순리대로 만든 자연치즈, 채소나 과일들도 우리땅에서<br>
+                        제절에 난것들을 넣어 빵의 맛을 더합니다.
+                    </li>
+                    <li class="btn-area"><a href="#" class="btn">자세히보기</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="family_site">
+            <div class="buttonWrap">
+                <div class="wrapList">
+                    <ul>
+                        <li></li>
+                        <li>
+                            <a href="#" target="_blank" title="새창으로 열기" class="Cj_foodville">CJ푸드빌</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="vips">빕스</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="the_place">더플레이스</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="cheil" >제일제면소</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="ngrill">엔그릴</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="ntower">N SEOUL TOWER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerWrap">
+            <ul>
+                <li>
+                    <ul class="fnb">
+						<li><a href="#" target="_blank" class="company"><img src="/img/tlj/footer_menu_01.png" alt="회사소개"></a></li>
+						<li><a href="#" class="recruit"><img src="/img/tlj/footer_menu_02.png" alt="기사 채용안내"></a></li>
+						<li><a href="#" class="foundation" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_03.png" alt="이용약관"></a></li>
+						<li><a href="#" class="location" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_10.png" alt="위치기반서비스 이용약관"></a></li>
+						<li><a href="#" class="clause"><img src="/img/tlj/footer_menu_04.png" alt="창업안내"></a></li>
+						<li><a href="#" class="privacy" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_05.png" alt="개인정보처리방침"></a></li>
+						<li><a href="#" class="media" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_11.png" alt="영상정보처리기기 운영관리방침"></a></li><!-- 2023-07-13 추가 -->
+						<li><a href="#" class="email"><img src="/img/tlj/footer_menu_06.png" alt="이메일무단수집거부"></a></li>
+						<li><a href="#" class="ethic" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_07.png" alt="윤리신고센터"></a></li>
+						<li><a href="#" class="legal"><img src="/img/tlj/footer_menu_08.png" alt="법적고지"></a></li>
+						<li><a href="#" class="sitemap2"><img src="/img/tlj/footer_menu_09.png" alt="사이트맵"></a></li>
+					</ul>
+                </li>
+                <li class="fot">
+                    <div class="info">
+						<span class="business-name"><img src="/img/tlj/footer_info_business_name.png" alt="상호명:CJ푸드빌(주)"></span>
+						<address><img src="/img/tlj/footer_info_address.png" alt="주소:(우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&amp;G을지로타워 3, 9-11층 CJ푸드빌㈜"></address>
+						<span class="cs-center"><img src="/img/tlj/footer_info_cs_center.png" alt="고객센터:1577-0700"></span>
+						<span class="certificate">
+                            <img src="/img/tlj/footer_info_certificate.png" alt="통신판매업종신고증 제 2011-서울중구-0771호">
+                                <a href="#" target="_blank" title="새창열림">
+                                    <img src="/img/tlj/footer_info_information.png" alt="사업자정보확인">
+                                </a>
+                        </span>
+						<span class="hosting"><img src="/img/tlj/hosting.png" alt="호스팅제공자 : CJ올리브네트웍스(주)"></span><br>
+						<span class="business-num"><img src="/img/tlj/footer_info_business_num.png" alt="사업자등록번호:312-81-42519"></span>
+						<span class="ceo"><img src="/img/tlj/footer_info_ceo.png" alt="대표이사:김찬호"></span>
+						<span class="manager"><img src="/img/tlj/footer_info_manager.png" alt="개인정보보호책임자:김재완"></span>
+						<span class="email"><a href="#"><img src="/img/tlj/footer_info_email.png" alt="대표 이메일:help_master@cj.net"></a></span>
+					</div>
+                    <p class="copyright">COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

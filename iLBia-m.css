@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body{min-width: 100%;}
+.material-symbols-outlined{
+    display: inline-block;
+    float: right;
+    margin: 25px 10px 0 0;
+}
+header{
+    display: inline-block;
+    background: #fff;
+    min-width: 100%;
+    width: 100%;
+}
+#toggle:checked ~ #top{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #73A0ED;
+}
+.th{
+    position: relative;
+    display: inline-block;
+    padding: 0;
+}
+.logo{
+    height: 100%;
+}
+.top{
+    display: none;
+    gap:0;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+}
+.r-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    outline: 1px solid #cbdeff;
+    margin: 20px 0;
+}
+.top span{display: block;}
+.video{display: none;}
+.slider{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+}
+.myslide{
+    width: 100%;
+    height: 350px;
+}
+.slider1{
+    width: 100%;
+    height: 350px;
+}
+.sec1{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 400px;
+    height:300px;
+    overflow: hidden;
+}
+.inner-1{
+    display: block;
+    width: 640px;
+    height: 300px;
+    overflow: hidden;
+}
+.imgcollect{
+    width: 640px;
+}
+.text{margin-left: 0;}
+.imgset img{
+    width: 150px;
+    height: 150px;
+}
+.sec2{
+    top: 400px;
+    position:relative;
+}
+.riview{width: 100%;}
+.riview h1{padding: 0;}
+.rset{
+    min-width: 150px;
+}
+.product{
+    width: 100%;
+    padding: 20px 0;
+}
+.hset{gap: 20px;}
+.hover{
+    width: 150px;
+    height: 150px;
+}
+.hover .p{
+    font-size: 20px;
+    padding-left: 40px;
+}
+.hover a img{
+    width: 150px;
+    height: 150px;
+}
+.hset .hover:hover{padding-bottom: 0;}
+.product h1{padding: 0;}
+.fimg a img{
+    position: relative;
+    height: 100px;
+    top: 400px;
+}
+footer{
+    position: relative;
+    top: 400px;
+    height: 200px;
+    padding-top: 0;
+}
+.foot{
+    line-height: 12px;
+    font-size: 10px;
+}
+.foot_1 p, .foot_2 p{margin-bottom: 10px;}
+.foot_1{padding: 0;}
+.foot_2{padding: 0;}
+.foot_3{padding: 0;}
+.foot_3 img{margin: 0;}

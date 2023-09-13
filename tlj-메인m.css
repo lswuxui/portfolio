@@ -1,0 +1,355 @@
+@charset "UTF-8";
+*{
+    z-index: 0;  
+    /* outline: 1px solid red; */
+}
+.tnb{display: none;}
+.sns{display: none;}
+body{
+    position: static;
+    background-color: #f7f0da;
+    visibility: visible;
+    min-width: 340px;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #184f3b;
+    height: 66px;
+}
+.top_hd{
+    position: static;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+.logo a img{
+    content: url(/img/메인m/logo.png);
+    width: 146px;
+    height: 21px;
+}
+.search{
+    position: static;
+    width: 28px;
+    height: 30px;
+    padding: 5px 5px 0 0px;
+}
+.btn_search img{
+    float: none;
+    content: url(/img/메인m/top_search.png);
+    width: 22px;
+    height: 22px;
+}
+.nav {
+    pointer-events:none;
+    position: static;
+    width:65px;
+    height: 64px;
+    content: url(/img/메인m/m_gnb.png);
+    top: 0;
+    z-index: 0;
+}
+.nav > ul {
+    display: block;
+    width: 80%;
+}
+.all > li {
+    float: none;
+    display: block;
+    width: 80px;
+    height: 100px;
+}
+.gnb_dim{
+    width: 60px;
+    height: 60px;
+    background: url(/img/메인m/btn_locate.png) 50% 50% no-repeat;
+    background-size: 65px 65px;
+}
+#content{
+    position: relative;
+    width: 100%;
+}
+.sec1{
+    position: absolute;
+    display: none;
+    margin-bottom: 0;
+}
+.main-slider{
+    position: absolute;
+    height: 0;
+}
+body .sec2{
+    padding-top: 0;
+    margin-top: 0;
+    padding: 0;
+    z-index: 0;
+}
+body .main1{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    height: 100%;
+    z-index: 0;
+}
+.floatleft{
+    max-width: 640px;
+    width: 100%;
+    float: none;
+}
+.bxslider li{
+    position: static;
+    width: 100%;
+    height: auto;
+}
+.bxslider li a > img{
+    position: static;
+    width: 100%;
+    height: 407px;
+}
+.start{display: none;}
+.floatleft .bx-wrapper .bx-controls{
+    background: none;
+    height: 26px;
+    padding-top: 7px;
+    background-color: #1e0801;
+}
+.bx-pager-item a{
+    background: #757575;
+    text-indent: -9999px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 0 7px;
+    outline: 0;
+    border-radius: 10px;
+}
+.floatleft + .shop-mall{
+    position: relative;
+    height: 111px;
+    top: -3px;
+    z-index: 100;
+}
+.lfloat{display: none;}
+.shop-mall {
+    position: static;
+    width: 100%;
+}
+.shop-mall > a{display: block;}
+.shop-mall img{
+    width: 100%;
+    height: 111px;
+}
+body .main1 .floatright{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+.floatright .bxwrapper{
+    margin-top: -3px;
+    background: #fff;
+    height: 266px;
+    width: 100%;
+}
+.bxwrapper .bxviewport{
+    height: 266px;
+}
+.bx-slider{height: 266px;}
+.floatright .fresh{
+    height: 100%;
+    margin-top: 0px;
+}
+.floatright .recomm img{display: none;}
+.floatright .recomm p{
+    padding: 22px 15px 7px;
+    color: #184f3b;
+    line-height: 20px;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+.floatright .recomm span{
+    font-size: 15px;
+}   
+.fresh > a{
+    display: block;
+}
+.fresh img{
+    width: 100%;
+    height: 100%;
+}
+.tljsns{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    height: 266px;
+    width: 100%;
+}
+.tljsns p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #184f3b;
+    height: 20px;
+    width: 280px;
+    font-weight: 500;
+    margin: 10px 0 0 10px;
+}
+.tljsns .sns_m{
+    height: 11px;
+}
+.tljsns a{
+    width: 100%;
+}
+.tljsns .facebook_btn{
+    float: right;
+    height: 20px;
+    margin-right: 10px;
+}
+.rfloat {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.rfloat .partner a{display: block;}
+.partner a img{
+    content: url(/img/메인m/kakaoplus.png);
+    width: 100%;
+}
+.lfloat{
+    display: flex;
+    align-items:baseline;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 3px;
+}
+.lfloat .banner1{
+    content: url(/img/메인m/foundation.png);
+    width: 100%;
+    height: 100%;
+}
+.lfloat .banner2{
+    content: url(/img/메인m/recruit.png);
+    width: 100%;
+    height: 100%;
+}
+.main3 .lfloat{
+    width: auto;
+    height: 100%;
+}
+.main2{margin-bottom: 0;}
+.main3{margin-bottom: 0;}
+.main3 .rfloat{
+    width: 100%;
+    height: 55px;
+    float: none;
+}
+.notice{
+    display: flex;
+    align-items: center;
+    background-color: #8b8b8b;
+    width: 100%;
+}
+.tit{display: none;}
+.notice .list{
+    margin: 0;
+}
+.list{
+    height: 20px;
+    overflow: hidden;
+}
+.list ul li a{
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    color: #fff;
+}
+.btn-more a{
+    background: transparent url(/img/tlj/common.png) no-repeat -388px -299px;
+    border: 1px #666;
+}
+.notice .btn-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #666;
+    height: 55px;
+    width: 55px;
+    right: 0;
+    top: 0;
+}
+.family_site{display: none;}
+footer .footmenu{
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+footer .footmenu li{
+    height: 90px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #3a3b3a;
+    border: 1px solid #9b938c;
+}
+footer{
+    position: static;
+}
+footer .footmenu li a{
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+footer .footmenu li a strong{display: inline-block;}
+footer .footmenu li a strong img{
+    display: block;
+    width: auto;
+    height: 50px;
+}
+.company, .recruit, .clause, .ethic{display: none;}
+.footerWrap{
+
+}
+.footerWrap > ul{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.fot{padding-top: 0;}
+.business-name{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .list ul li:nth-child(2), 
+.list ul li:nth-child(3){display: none;} */

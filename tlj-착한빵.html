@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>착한빵</title>
+    <link rel="stylesheet" href="/css/tlj-착한빵.css">
+</head>
+<body>
+    <header>
+        <div class="gnb_dim"></div>
+        <!-- <div class="gnb_dim2" style="display: none; height: 0px; overflow: hidden;"></div> -->
+        <div class="top_hd">
+            <h1 class="logo"><a href="http://127.0.0.1:5500/html/tlj-3.html" target="_blank" ><img src="/img/tlj/logo.png" alt="logo"></a></h1>
+            <ul class="sns">
+                <li>
+                    <a href="#" class="facebook" target="_blank" title="새창열림">페이스북</a>
+                    <a href="#" class="twitter" target="_blank" title="새창열림">트위터</a>
+                    <a href="#" class="instagram" target="_blank" title="새창열림">인스타그램</a>
+                </li>
+            </ul>
+            <fieldset class="search">
+                <legend>제품검색</legend>
+                <form name="srch" method="get" action="#" onsubmit="return srchCheck(srch)">
+                    <label for="prod_name">
+                      <input type="text" id="prod_name" name="prod_name" value style="width: 0px; display: none;" class="ipt02" autocomplete="off" title="제품명 입력" placeholder="제품명을 입력해 주세요.">
+                    </label>
+                    <a href="#" id="btnSearch" class="btn_search" onclick="prodSrch(srch); return false">
+                        <img src="/img/tlj/search.png" title="검색" alt="검색">
+                    </a>
+                    <span class="btn_close">
+                        <a href="#" title="닫기">닫기</a>
+                    </span>
+                </form>
+            </fieldset>
+            <ul class="tnb">
+                <li style = "/*display:none;*/">
+                    <a href="#" class="tnb_store">매장안내</a>
+                    <a href="#" class="tnb_customer">고객센터</a>
+                    <a href="#" class="tnb_recruit">기사 채용안내</a>
+                    <a href="#" class="tnb_login">로그인</a>
+                    <a href="#" class="tnb_foundation">창업안내</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul class="all">
+                <li class="gnb_brand">
+                    <a id="skip_gnb" class="depth1"  href="#">브랜드 스토리</a>
+                    <ul class="depth2">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EC%9E%AC%EB%A3%8C%EC%9D%B4%EC%95%BC%EA%B8%B0.html" target="_blank">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EB%9D%BC%EB%9C%B0%EB%A6%AC%EC%97%90.html" target="_blank">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EC%B0%A9%ED%95%9C%EB%B9%B5.html" target="_blank">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 &amp; 공지사항</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_bread">
+                    <a class="depth1" href="#">새로워진 뚜레쥬르</a>
+                    <ul class="depth2">
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
+                        <li><a href="#" class="">갓 구운 빵 시간표</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_product">
+                    <a class="depth1" href="#">제품 안내</a>
+                    <ul class="depth2">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&amp;스낵</a></li>
+                        <li><a href="#">음료</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_event">
+                    <a class="depth1" href="#">이벤트&amp;멤버십</a>
+                    <ul class="depth2">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_shop">
+                    <a class="depth1" href="#">뚜레쥬르 앱&amp;온라인 쇼핑몰</a>
+                    <ul class="depth2" >
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃&amp;케이크 택배 배송</a></li>
+                        <li><a class="last" href="#">대량 구매 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page_top">
+            <div class="path">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">브랜드 스토리</a>
+                        <a>뚜레쥬르 착한빵</a>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="page_title">
+                <span class="tit">뚜레쥬르 착한빵</span>
+            </h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="goodBread">
+                <div class="Bread_top">
+                    <span class="imgGB"></span>
+                    <div class="txt">
+                        <h3>뚜레쥬르의 착한빵 이야기</h3>
+                        <p>
+                            착한빵은 뚜레쥬르의 착한 마음을 담아<br>
+                            신선한 국내산 원재료를 사용하여 만든빵으로<br>
+                            <strong>두 개가 팔릴 떄마다 하나씩 복지시설 아동에게 맛있는 빵을 선물</strong>합니다.
+                        </p>
+                        <img src="/img/착한빵/img_goodBread01.png" alt="기부" class="imgBread">
+                    </div>
+                </div>
+                <div class="Bread_farm">
+                    <div class="imgbox"><img src="/img/착한빵/img_goodBread_farm06.jpg" alt="의성마늘"></div>
+                    <div class="txtbox">
+                        <div class="inner">
+                            <h4>
+                                <img src="/img/착한빵/tit_GB07.png" alt="의성마늘">
+                            </h4>
+                            <p class="first">
+                                신선한 국내산 원재료인 고흥 유자와<br>
+                                의성마늘로 제품을 만들어 상생을 실천합니다.
+                            </p>
+                        </div>
+                        <div class="inner">
+                            <h5 class="sub-tit">
+                                [고흥 유자와 의성 마늘로 만든<br>
+                                2018년 뚜레쥬르 착한빵 2종]
+                            </h5>
+                            <p>
+                                바삭한 비스켓을 올린 부드러운 브리오쉬에 고흥 유자로 만든 새콤한 유자청과 달콤한 크림을 가득 채운 유자 닮은 유자크림빵<br>
+                                겉은 바삭 속은 부드러운 바게트에 진하고 달콤한 의성 마늘 소스를 듬뿍 뿌려 촉촉하고 깊은 맛의 갈릭 퐁당 브레드
+                                <img src="/img/착한빵/img_GB08.png" alt="유자빵" class="img_product" style="margin-top: 20px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bread_farm">
+                    <div class="imgbox"><img src="/img/착한빵/img_goodBread_farm05.jpg" alt="강원쌀"></div>
+                    <div class="txtbox">
+                        <div class="inner">
+                            <h4>
+                                <img src="/img/착한빵/tit_GB06.png" alt="강원쌀">
+                            </h4>
+                            <p class="first">
+                                '우리땅에서 나는 건강 재료 발굴 상생 협약'을 통해<br>
+                                선정된 강원도 지역의 국내산 쌀 제품으로 만들어<br>
+                                상생을 실천합니다.
+                            </p>
+                        </div>
+                        <div class="inner">
+                            <h5 class="sub-tit">
+                                [강원도 쌀로 만든<br>
+                                2017년 뚜레쥬르 착한빵 2종]
+                            </h5>
+                            <p>
+                                향긋한 쑥을 넣은 쫄깃한 떡을 쏙 넣고 소보로까지 토핑한 나눠먹기 좋은 우리쌀로 만든 쑥떡브레드와 쌀을 첨가하여 한층 더 쫄깃하고 바삭해진 츄러스에 달콤한 설탕을 토핑하여 커피와 잘 어울리는 라이스츄러스
+                                <img src="/img/착한빵/img_GB07.png" alt="우리쌀" class="img_product" style="margin-top: 3px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bread_farm">
+                    <div class="imgbox"><img src="/img/착한빵/img_goodBread_farm04.jpg" alt="의성마늘"></div>
+                    <div class="txtbox">
+                        <div class="inner">
+                            <h4>
+                                <img src="/img/착한빵/tit_GB05.png" alt="의성마늘">
+                            </h4>
+                            <p class="first">
+                                '우리땅에서 나는 건강 재료 발굴 상생 협약'을 통해<br>
+                                선정된 경기도 이천 지역의 국내산 쌀 제품으로 만들어<br>
+                                상생을 실천합니다.
+                            </p>
+                        </div>
+                        <div class="inner">
+                            <h5 class="sub-tit">
+                                [이천 쌀로 만든<br>
+                                2017년 뚜레쥬르 착한빵 2종]
+                            </h5>
+                            <p>
+                                향긋한 쑥과 쌀가루로 만든 쫄갓한 빵에 고소한 콩가루를 토핑한 고소한 인절미스틱과, 향긋한 쑥을 넣은 쫄깃한 떡을 쏙 넣고 소보로까지 토핑한 나눠먹기 좋은 우리쌀로 만든 쑥떡브레드
+                                <img src="/img/착한빵/img_GB06.png" alt="유자빵" class="img_product" style="margin-top: 5px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bread_farm">
+                    <div class="imgbox"><img src="/img/착한빵/img_goodBread_farm03.jpg" alt="전북고창"></div>
+                    <div class="txtbox">
+                        <div class="bx-wrapper">
+                            <div class="bx-viewport">
+                                <ul class="rolling">
+                                    <li style="float: left; list-style: none; position: relative; width: 328px;" class="bx-clone">
+                                        <div class="inner">
+                                            <h4><img src="/img/착한빵/tit_GB04.png" alt="흑보리"></h4>
+                                            <p class="first">
+                                                '우리땅에서 나는 건강 재료 발굴 상생 협약'을 통해<br>
+                                                선정된 전라도 지역 특산물인 흑보리로 제품을 만들어<br>
+                                                상생을 실천합니다.
+                                            </p>
+                                        </div>
+                                        <div class="inner">
+                                            <h5 class="sub-tit">
+                                                [전라도 특산물 흑보리로 만든<br>
+                                                2015년 뚜레쥬르 착한빵 2종]
+                                            </h5>
+                                            <p>흑보리를 듬뿍 넣어 담백하고 구수한 풍미와 빵 속에 톡톡 씹히는 맛있는 흑미 알갱이를 맛볼 수 있는 보리이삭 모양의 흑보리 브레드와, 흑맥주로 발효기켜 담백한 흑보리 빵에 고다치즈를 넣어 짭짤하게 즐길 수 있는 흑보리치즈치아바다</p>
+                                            <img class="img_product" src="/img/착한빵/img_GB04.png" alt="흑보리">
+                                        </div>
+                                    </li>
+                                    <li style="float: left; list-style: none; position: relative; width: 328px;">
+                                        <div class="inner">
+                                            <h4><img src="/img/착한빵/tit_GB03.png" alt="흑보리빵"></h4>
+                                            <p class="first">
+                                                '우리땅에서 나는 건강 재료 발굴 상생 협약'을 통해<br>
+                                                선정된 전라도 지역 특산물인 흑보리로 제품을 만들어<br>
+                                                상생을 실천합니다. 
+                                            </p>
+                                        </div>
+                                        <div class="inner">
+                                            <h5 class="sub-tit">
+                                                [전라도 특산물 흑보리로 만든<br>
+                                                2016년 뚜레쥬르 착한빵 2종]
+                                            </h5>
+                                            <p>
+                                                담백한 흑보리와 쫄깃한 찹쌀이 어우러져<br>
+                                                씹는맛이 좋은 한입사이즈의 흑보리 찰도넛과, 다양한 곡물과 고구마, 찹쌀떡이 어우러져 고소한 맛이 더욱 좋은 간식형 브레드
+                                                <img class="img_product" src="/img/착한빵/img_GB05.png" alt="흑보리">
+                                            </p>
+
+                                        </div>
+                                    </li>
+                                    <li style="float: left; list-style: none; position: relative; width: 328px;">
+                                        <div class="inner">
+                                            <h4><img src="/img/착한빵/tit_GB03.png" alt="흑보리"></h4>
+                                            <p class="first">
+                                                '우리땅에서 나는 건강 재료 발굴 상생 협약'을 통해<br>
+                                                선정된 전라도 지역 특산물인 흑보리로 제품을 만들어<br>
+                                                상생을 실천합니다.
+                                            </p>
+                                        </div>
+                                        <div class="inner">
+                                            <h5 class="sub-tit">
+                                                [전라도 특산물 흑보리로 만든<br>
+                                                2016년 뚜레쥬르 착한빵 2종]
+                                            </h5>
+                                            <p>
+                                                전라북도 고창 흑보리를 넣은 빵에 찹쌀떡과 달콤한 시럽을 뿌려 쫄깃함과 달콤함을 더한 흑보리 찰떡 브레드와, 흑보리를 넣은 빵에 달콤한 팥앙금을 넣어 구수함과 달콤함이 어우러진 흑보리 앙금빵
+                                                <img class="img_product" src="/img/착한빵/img_GB03.png" alt="흑보리">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li style="float: left; list-style: none; position: relative; width: 328px;">
+                                        <div class="inner">
+                                            <h4><img src="/img/착한빵/tit_GB04.png" alt="흑보리"></h4>
+                                            <p class="first">
+                                                '우리땅에서 나는 건강 재료 발굴 상행 협약'을 통해<br>
+                                                선정된 전라도 지역 특산물인 흑보리로 제품을 만들어<br>
+                                                상생을 실천합니다.
+                                            </p>
+                                        </div>
+                                        <div class="inner">
+                                            <h5 class="sub-tit">
+                                                [전라도 특산물 흑보리로 만든<br>
+                                                2015년 뚜레쥬르 착한빵 2종]
+                                            </h5>
+                                            <p>
+                                                흑보리를 듬뿍 넣어 담백하고 구수한 풍미와 빵 속에 톡톡씹히는 맛있는 흑미 앙ㄹ갱이를 맛볼 수 있는 보리이삭 모양의 흑보리 브레드와, 흑맥주로 발효 시켜 담백한 흑보리 빵에 고다치즈를 넣어 짭짤하게 즐길 수 있는 흑보리치즈치아바타
+                                                <img class="img_product" src="/img/착한빵/img_GB04.png" alt="흑보리브레드">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li style="float: left; list-style: none; position: relative; width: 328px;" class="bx-clone">
+                                        <div class="inner">
+                                            <h4><img src="/img/착한빵/tit_GB03.png" alt="흑보리"></h4>
+                                            <p class="first">
+                                                '우리땅에서 나는 건강 재료 발굴 상생 협약'을 통해<br>
+                                                선정된 전라도 지역 특산물인 흑보리로 제품을 만들어<br>
+                                                상생을 실천합니다.
+                                            </p>
+                                        </div>
+                                        <div class="inner">
+                                            <h5 class="sub-tit">
+                                                [전라도 특산물 흑보리로 만든<br>
+                                                2016년 뚜레쥬르 착한빵 2종]
+                                            </h5>
+                                            <p>
+                                                담백한 흑보리와 쫄깃한 찹쌀이 어우러져<br>
+                                                씹는맛이 좋은 한입사이즈의 흑보리 찰도넛과, 다양한 곡물과 고구마, 찹쌀떡이 어우러져 고소한 맛이 더욱 좋은 간식형 브레드
+                                                <img class="img_product" src="/img/착한빵/img_GB05.png" alt="흑보리">
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls">
+                                <div class="direction">
+                                    <a class="bx-prev">Prev</a>
+                                    <a class="bx-next">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bread_farm">
+                    <div class="imgbox"><img src="/img/착한빵/img_goodBread_farm01.jpg" alt="전남대영"></div>
+                    <div class="txtbox">
+                        <div class="inner">
+                            <h4>
+                                <img src="/img/착한빵/tit_GB01.png" alt="전남대영">
+                            </h4>
+                            <p class="first">
+                                2015년에는 땅끝해남에서 감자를 재배하는<br>
+                                농가와의 거래를 통하여 신선한 해남산 감자로<br>
+                                제품을 만들어 상생을 실천합니다.
+                            </p>
+                        </div>
+                        <div class="inner">
+                            <h5 class="sub-tit">
+                                [해남산 감자로 만든 뚜레쥬르 착한빵 2종]
+                            </h5>
+                            <p>
+                               알알이 뜯어먹기 좋은 담백한 빵에 폭신한 순감자, 치즈와 허니머스타드 소스를 곁들인 알알이 순감자(감자함량 31%)와 담백한 포카치아 속 감자와 햄을 넣은 순감자 포카치아 (감자함량42%)
+                            </p>
+                            <p><img src="/img/착한빵/img_GB01.png" class="img_product" alt="알알이" style="height: 162px;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Bread_farm">
+                    <div class="imgbox"><img src="/img/착한빵/img_goodBread_farm02.jpg" alt="경남하동"></div>
+                    <div class="txtbox">
+                        <div class="inner">
+                            <h4><img src="/img/착한빵/tit_GB02.png" alt="하동녹차"></h4>
+                            <p class="first">
+                                2014년에는 비영리단체 (하동녹차연구소)가<br>
+                                운영하는 녹차농가 (약2000가구)와의 직거래를<br>
+                                통하여 깨끗한 하동 녹차로 제품을 만들어<br>
+                                상생을 실천합니다.
+                            </p>
+                        </div>
+                        <div class="inner">
+                            <h5 class="sub-tit">
+                                [하동 녹차로 만든 뚜레쥬르 착한빵 2종]
+                            </h5>
+                            <p style="font-size: 13px;">
+                                바삭한 녹차 소보로빵에 시원한 크림을 넣은<br>
+                                쿨 브레드 제품으로 하동녹차를 이용하여 만든<br>
+                                뚜레쥬르 베스트 제품! 쿨~녹차브레드와 은은한 녹차를 넣은 담백한 빵에 쫀득한 찰떡과 달콤한 콩을 넣어 쫄깃하게 씹히는 녹차 쫀득쫀득 녹차콩떡
+                            </p>
+                            <p><img src="/img/착한빵/img_GB02.png" alt="녹차콩떡" style="height: 130px; width: 250px;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="family_site">
+            <div class="buttonWrap">
+                <div class="wrapList">
+                    <ul>
+                        <li></li>
+                        <li>
+                            <a href="#" target="_blank" title="새창으로 열기" class="Cj_foodville">CJ푸드빌</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="vips">빕스</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="the_place">더플레이스</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="cheil" >제일제면소</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="ngrill">엔그릴</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="ntower">N SEOUL TOWER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerWrap">
+            <ul>
+                <li>
+                    <ul class="fnb">
+						<li><a href="#" target="_blank" class="company"><img src="/img/tlj/footer_menu_01.png" alt="회사소개"></a></li>
+						<li><a href="#" class="recruit"><img src="/img/tlj/footer_menu_02.png" alt="기사 채용안내"></a></li>
+						<li><a href="#" class="foundation" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_03.png" alt="이용약관"></a></li>
+						<li><a href="#" class="location" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_10.png" alt="위치기반서비스 이용약관"></a></li>
+						<li><a href="#" class="clause"><img src="/img/tlj/footer_menu_04.png" alt="창업안내"></a></li>
+						<li><a href="#" class="privacy" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_05.png" alt="개인정보처리방침"></a></li>
+						<li><a href="#" class="media" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_11.png" alt="영상정보처리기기 운영관리방침"></a></li><!-- 2023-07-13 추가 -->
+						<li><a href="#" class="email"><img src="/img/tlj/footer_menu_06.png" alt="이메일무단수집거부"></a></li>
+						<li><a href="#" class="ethic" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_07.png" alt="윤리신고센터"></a></li>
+						<li><a href="#" class="legal"><img src="/img/tlj/footer_menu_08.png" alt="법적고지"></a></li>
+						<li><a href="#" class="sitemap2"><img src="/img/tlj/footer_menu_09.png" alt="사이트맵"></a></li>
+					</ul>
+                </li>
+                <li class="fot">
+                    <div class="info">
+						<span class="business-name"><img src="/img/tlj/footer_info_business_name.png" alt="상호명:CJ푸드빌(주)"></span>
+						<address><img src="/img/tlj/footer_info_address.png" alt="주소:(우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&amp;G을지로타워 3, 9-11층 CJ푸드빌㈜"></address>
+						<span class="cs-center"><img src="/img/tlj/footer_info_cs_center.png" alt="고객센터:1577-0700"></span>
+						<span class="certificate">
+                            <img src="/img/tlj/footer_info_certificate.png" alt="통신판매업종신고증 제 2011-서울중구-0771호">
+                                <a href="#" target="_blank" title="새창열림">
+                                    <img src="/img/tlj/footer_info_information.png" alt="사업자정보확인">
+                                </a>
+                        </span>
+						<span class="hosting"><img src="/img/tlj/hosting.png" alt="호스팅제공자 : CJ올리브네트웍스(주)"></span><br>
+						<span class="business-num"><img src="/img/tlj/footer_info_business_num.png" alt="사업자등록번호:312-81-42519"></span>
+						<span class="ceo"><img src="/img/tlj/footer_info_ceo.png" alt="대표이사:김찬호"></span>
+						<span class="manager"><img src="/img/tlj/footer_info_manager.png" alt="개인정보보호책임자:김재완"></span>
+						<span class="email"><a href="#"><img src="/img/tlj/footer_info_email.png" alt="대표 이메일:help_master@cj.net"></a></span>
+					</div>
+                    <p class="copyright">COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

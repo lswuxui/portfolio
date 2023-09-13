@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뚜레쥬르</title>
+    <link rel="stylesheet" href="/css/tlj-메인.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="/css/tlj-메인m.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="gnb_dim"></div>
+        <div class="top_hd">
+            <h1 class="logo"><a href="#" target="_blank" ><img class="bg" src="/img/tlj/logo.png" alt="logo"></a></h1>
+            <ul class="sns">
+                <li>
+                    <a href="#" class="facebook" target="_blank" title="새창열림">페이스북</a>
+                    <a href="#" class="twitter" target="_blank" title="새창열림">트위터</a>
+                    <a href="#" class="instagram" target="_blank" title="새창열림">인스타그램</a>
+                </li>
+            </ul>
+            <fieldset class="search">
+                <legend>제품검색</legend>
+                <form name="srch" method="get" action="#" onsubmit="return srchCheck(srch)">
+                    <label for="prod_name">
+                      <input type="text" id="prod_name" name="prod_name" value style="width: 0px; display: none;" class="ipt02" autocomplete="off" title="제품명 입력" placeholder="제품명을 입력해 주세요.">
+                    </label>
+                    <a href="#" id="btnSearch" class="btn_search" onclick="prodSrch(srch); return false">
+                        <img src="/img/tlj/search.png" title="검색" alt="검색">
+                    </a>
+                    <span class="btn_close">
+                        <a href="#" title="닫기">닫기</a>
+                    </span>
+                </form>
+            </fieldset>
+            <ul class="tnb">
+                <li style = "/*display:none;*/">
+                    <a href="#" class="tnb_store">매장안내</a>
+                    <a href="#" class="tnb_customer">고객센터</a>
+                    <a href="#" class="tnb_recruit">기사 채용안내</a>
+                    <a href="#" class="tnb_login">로그인</a>
+                    <a href="#" class="tnb_foundation">창업안내</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <input class="nav_bt" type="button" value="nav_bt">
+            <ul class="all">
+                <li class="gnb_brand">
+                    <a id="skip_gnb" class="depth1"  href="#">브랜드 스토리</a>
+                    <ul class="depth2">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EC%9E%AC%EB%A3%8C%EC%9D%B4%EC%95%BC%EA%B8%B0.html" target="_blank">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EB%9D%BC%EB%9C%B0%EB%A6%AC%EC%97%90.html" target="_blank">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="http://127.0.0.1:5500/html/tlj-%EC%B0%A9%ED%95%9C%EB%B9%B5.html" target="_blank">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 &amp; 공지사항</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_bread">
+                    <a class="depth1" href="#">새로워진 뚜레쥬르</a>
+                    <ul class="depth2">
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
+                        <li><a href="#" class="">갓 구운 빵 시간표</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_product">
+                    <a class="depth1" href="#">제품 안내</a>
+                    <ul class="depth2">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&amp;스낵</a></li>
+                        <li><a href="#">음료</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_event">
+                    <a class="depth1" href="#">이벤트&amp;멤버십</a>
+                    <ul class="depth2">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
+                    </ul>
+                </li>
+                <li class="gnb_shop">
+                    <a class="depth1" href="#">뚜레쥬르 앱&amp;온라인 쇼핑몰</a>
+                    <ul class="depth2" >
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃&amp;케이크 택배 배송</a></li>
+                        <li><a class="last" href="#">대량 구매 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="sec1" id="skip_cnt" tabindex="-1">
+        <div class="main-slider1">
+            <ul>
+                <li class="img_main2">      
+                    <img src="/img/tlj/img_main2.png" width="1400" height="606" alt="main2">
+                </li>
+            </ul>
+        </div>
+        <div class="visual_area">
+            <div class="txt2">
+                <span>
+                    <a href="#"><img src="/img/tlj/visual_area_scroll.png" alt="scoll"></a>
+                </span>
+            </div>
+        </div>
+        <a href="#" class="link-area">
+            <span class="hidden">뚜레쥬르 대배너</span>
+        </a>
+    </section>
+    <section class="sec2">
+        <div id="content">
+            <div id="dogs" style="display: none;"></div>
+            <form name="eParamFrm" id="eParamFrm" method="post">
+                <input type="hidden" name="dog_check">
+                <input type="hidden" name="user_id">
+            </form>
+            <div class="main1">
+                <div class="floatleft main-slider3">
+                    <div class="bx-wrapper" style="max-width: 100%;">
+                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 405px;">
+                            <ul class="bxslider" style="width: auto; position: relative;">
+                                <li style="display: list-item;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-7-13_event.jpg" alt="오늘은 마음 편히 달콤하세요!">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-6-7_event.jpg" alt="카멜커피는 뚜캉스 중">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-6-15_event.jpg" alt="뚜레쥬르x카멜 콜라보 음료 7잔 마시고 카멜 비치타월 받자!">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-4-21_event.png" alt="ㅁㄴ">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-7-7_event.jpg" alt="SKT 0 day">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-7-11_event.jpg" alt="SKT T day">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-4-3_event(2).jpg" alt="KT 멤버십 VVIP/VIP 혜택">
+                                    </a>
+                                </li>
+                                <li style="display: none;">
+                                    <a href="#">
+                                        <img src="/img/tlj/2023-7-3_event.jpg" alt="7월 배달앱 프로모션">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bx-controls">
+                            <div class="bx-pager bx-default-pager">
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="0" class="bx-pager-link">1</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="1" class="bx-pager-link">2</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="2" class="bx-pager-link">3</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="3" class="bx-pager-link">4</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="4" class="bx-pager-link">5</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="5" class="bx-pager-link">6</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="6" class="bx-pager-link">7</a>
+                                </div>
+                                <div class="bx-pager-item">
+                                    <a href data-slide-index="7" class="bx-pager-link active">8</a>
+                                </div>
+                            </div>
+                            <div class="bx-direction">
+                                <a class="prev" href>prev</a>
+                                <a class="next" href>next</a>
+                            </div>
+                            <div class="bx-auto">
+                                <div class="auto-item">
+                                    <a class="start" href>재생</a>
+                                </div>
+                                <div class="auto-item">
+                                    <a class="stop" href>정지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-mall">
+                    <a href="#" target="_blank" title="새창열기">
+                        <img src="/img/tlj/img_banner4.png" alt="쇼핑몰">
+                    </a>
+                </div>
+                <div class="floatright">
+                    <div class="recomm">
+                        <img src="/img/tlj/lb_recomm.png" alt="추천제품">
+                        <p>추천제품 <span> Recommended Product</span></p>
+                    </div>
+                    <div class="bxwrapper">
+                        <div class="bxviewport">
+                            <ul class="bx-slider"></ul>
+                        </div>
+                        <div class="bx-controls"></div>
+                    </div>
+                    <div class="fresh">
+                        <a href="#">
+                            <img src="/img/tlj/img_banner5.png" alt="365일">
+                        </a>
+                    </div>
+                    <div class="tljsns">
+                        <p>뚜레쥬르 SNS</p>
+                        <a href="#"><img class="sns_m" src="/img/메인m/img_TLJ_sns.png" alt="sns"></a>
+                        <a href="#"><img class="facebook_btn" src="/img/메인m/btn_Sns_facebook.png" alt="facebookbtn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="main2">
+                <div class="lfloat">
+                    <div class="store_find">
+                        <h2 class="hidden">매장찾기</h2>
+                        <P class="hidden">뚜레쥬르 매장을 찾아보세요.</P>
+                        <fieldset class="srch_form">
+                            <legend>매장찾기</legend>
+                            <form name="store" action="/store/search.asp" onsubmit="return goStore(store);">
+                                <label>
+                                    <input type="text" name="ketword" style="width: 150px;" class="ipt02" title="매장명 입력" placeholder="매장명이나 시/군/구 명 입력" onfocus="if(this.value == '매장명이나 시/군/구 명 입력') this.value=''" onblur="if(this.value == '')this.value='매장명이나 시/군/구 명 입력'">
+                                </label>
+                                <input type="image" src="/img/tlj/btn_search.png" class="btn_search" title="검색" alt="검색">
+                            </form> 
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="rfloat">
+                    <div class="partner">
+                        <a href="#">
+                            <img src="/img/tlj/img_banner6.png" alt="제휴할인">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main3">
+                <div class="lfloat">
+                    <a href="#" class="banner1">
+                        <img src="/img/tlj/img_banner1.png" alt="창업안내">
+                    </a>
+                    <a href="#" class="banner2">
+                        <img src="/img/tlj/img_banner2.png" alt="기사 채용안내">
+                    </a>
+                </div>
+                <div class="rfloat">
+                    <div class="notice">
+                        <div class="tit">
+                            <span class="txt"><img src="/img/tlj/tit_notice_news.png" alt="news"></span>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">CJ푸드빌 영상정보처리기기 운영/관리방침 개정 고지</a></li>
+                                <li><a href="#">CJ푸드빌 개인정보처리방침 개정 고지</a></li>
+                                <li><a href="#">뚜레쥬르x카멜 콜라보 굿즈 비치타월 교환 가능 매장 안내</a></li>
+                            </ul>
+                        </div>
+                        <span class="btn-more"><a href="#">더보기</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <div class="family_site">
+            <div class="buttonWrap">
+                <div class="wrapList">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank" title="새창으로 열기" class="Cj_foodville">CJ푸드빌</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="vips">빕스</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="the_place">더플레이스</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="cheil" >제일제면소</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="ngrill">엔그릴</a>
+                            <a href="#" target="_blank" title="새창으로 열기" class="ntower">N SEOUL TOWER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="footmenu">
+            <li><a><strong><img src="/img/메인m/foot_facebook.png" alt=""></strong></a></li>
+            <li><a><strong><img src="/img/메인m/foot_pc.png" alt=""></strong></a></li>
+            <li><a><strong><img src="/img/메인m/foot_all_menu.png" alt=""></strong></a></li>
+        </ul>
+        <div class="footerWrap">
+            <ul>
+                <li>
+                    <ul class="fnb">
+						<li><a href="#" target="_blank" class="company"><img src="/img/tlj/footer_menu_01.png" alt="회사소개"></a></li>
+						<li><a href="#" class="recruit"><img src="/img/tlj/footer_menu_02.png" alt="기사 채용안내"></a></li>
+						<li><a href="#" class="foundation" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_03.png" alt="이용약관"></a></li>
+						<li><a href="#" class="location" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_10.png" alt="위치기반서비스 이용약관"></a></li>
+						<li><a href="#" class="clause"><img src="/img/tlj/footer_menu_04.png" alt="창업안내"></a></li>
+						<li><a href="#" class="privacy" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_05.png" alt="개인정보처리방침"></a></li>
+						<li><a href="#" class="media" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_11.png" alt="영상정보처리기기 운영관리방침"></a></li>
+						<li><a href="#" class="email"><img src="/img/tlj/footer_menu_06.png" alt="이메일무단수집거부"></a></li>
+						<li><a href="#" class="ethic" target="_blank" title="새창 열림"><img src="/img/tlj/footer_menu_07.png" alt="윤리신고센터"></a></li>
+						<li><a href="#" class="legal"><img src="/img/tlj/footer_menu_08.png" alt="법적고지"></a></li>
+						<li><a href="#" class="sitemap2"><img src="/img/tlj/footer_menu_09.png" alt="사이트맵"></a></li>
+					</ul>
+                </li>
+                <li class="fot">
+                    <div class="info">
+						<span class="business-name"><img src="/img/tlj/footer_info_business_name.png" alt="상호명:CJ푸드빌(주)"></span>
+						<address><img src="/img/tlj/footer_info_address.png" alt="주소:(우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&amp;G을지로타워 3, 9-11층 CJ푸드빌㈜"></address>
+						<span class="cs-center"><img src="/img/tlj/footer_info_cs_center.png" alt="고객센터:1577-0700"></span>
+						<span class="certificate">
+                            <img src="/img/tlj/footer_info_certificate.png" alt="통신판매업종신고증 제 2011-서울중구-0771호">
+                                <a href="#" target="_blank" title="새창열림">
+                                    <img src="/img/tlj/footer_info_information.png" alt="사업자정보확인">
+                                </a>
+                        </span>
+						<span class="hosting"><img src="/img/tlj/hosting.png" alt="호스팅제공자 : CJ올리브네트웍스(주)"></span><br>
+						<span class="business-num"><img src="/img/tlj/footer_info_business_num.png" alt="사업자등록번호:312-81-42519"></span>
+						<span class="ceo"><img src="/img/tlj/footer_info_ceo.png" alt="대표이사:김찬호"></span>
+						<span class="manager"><img src="/img/tlj/footer_info_manager.png" alt="개인정보보호책임자:김재완"></span>
+						<span class="email"><a href="#"><img src="/img/tlj/footer_info_email.png" alt="대표 이메일:help_master@cj.net"></a></span>
+					</div>
+                    <p class="copyright">COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
