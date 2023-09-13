@@ -74,6 +74,13 @@ header{
 .imgcollect{
     width: 640px;
 }
+.icon{
+    transition: none;
+    opacity: 0.5;
+    display: flex;
+    left: 35%;
+    gap: 5px;
+}
 .text{margin-left: 0;}
 .imgset img{
     width: 150px;
