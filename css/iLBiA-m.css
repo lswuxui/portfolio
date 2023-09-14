@@ -73,6 +73,7 @@ header{
 }
 .imgcollect{
     width: 640px;
+    gap: 0;
 }
 .icon{
     position: static;
