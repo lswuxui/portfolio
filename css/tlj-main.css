@@ -54,7 +54,7 @@ header{
     float: left;
     display: inline-block;
     margin-right: 29px;
-    background: url(/img/tlj/common.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/common.png) left top no-repeat;
     font-size: 0;
     color: #32271d;
 }
@@ -112,7 +112,7 @@ fieldset{
     float: left;
     margin: 6px 0 0 12px;
     padding-bottom: 1px;
-    background: url(/img/tlj/menu.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/menu.png) left top no-repeat;
     font-size: 0;
     color: #32271d;
     overflow: hidden;
@@ -152,7 +152,7 @@ fieldset{
     top: -49px;
     width: 63px;
     height: 68px;
-    background: url(/img/tlj/menu_point.png) no-repeat 0 0;
+    background: url(/portfolio/img/tlj/menu_point.png) no-repeat 0 0;
 }
 /* ----------------------------------------------------------- */
 
@@ -204,7 +204,7 @@ fieldset{
     width: 100%;
     height: 18px;
     padding: 30px 0 15px 0;
-    background: url(/img/tlj/gnb.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/gnb.png) left top no-repeat;
     font-size: 0;
 }
 .nav .depth1:first-child {
@@ -313,7 +313,7 @@ body .main1{
     bottom: 0;
     padding: 4px 0;
     width: 100%;
-    background: url(/img/tlj/main_slider1_controls_bg.png) 0 0 repeat;
+    background: url(/portfolio/img/tlj/main_slider1_controls_bg.png) 0 0 repeat;
     z-index: 100;
 }
 .floatleft .bx-wrapper .bx-pager{
@@ -322,7 +322,7 @@ body .main1{
     vertical-align: middle;
 }
 .bx-pager-item a{
-    background: url(/img/tlj/main.png) -78px -11px no-repeat;
+    background: url(/portfolio/img/tlj/main.png) -78px -11px no-repeat;
     text-indent: -9999px;
     display: block;
     width: 12px;
@@ -359,7 +359,7 @@ body .main1{
     text-indent: -9999px;
     width: 15px;
     height: 14px;
-    background: url(/img/tlj/main.png) -10px -10px no-repeat;
+    background: url(/portfolio/img/tlj/main.png) -10px -10px no-repeat;
 }
 .stop{
     display: none;
@@ -367,7 +367,7 @@ body .main1{
     text-indent: -9999px;
     width: 15px;
     height: 14px;
-    background: url(/img/tlj/main.png) -34px -10px no-repeat;
+    background: url(/portfolio/img/tlj/main.png) -34px -10px no-repeat;
 }
 /* -------------------------------------------------------------------- */
 .floatleft + .shop-mall{
