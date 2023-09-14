@@ -436,7 +436,7 @@ body .main2 .lfloat{
     position: relative;
     width: 596px;
     height: 263px;
-    background: url(/img/tlj/img_store_find.jpg) left top no-repeat;
+    background: url(/portfolio/img/tlj/img_store_find.jpg) left top no-repeat;
 }
 .hidden, legend{
     position: absolute;
@@ -526,7 +526,7 @@ body .main2 .lfloat{
     padding: 0;
     border: 1px solid #99918b;
     font-size: 0;
-    background: transparent url(/img/tlj/common.png) no-repeat -387px -328px;
+    background: transparent url(/portfolio/img/tlj/common.png) no-repeat -387px -328px;
 }
 /* ---------------------------------------푸터---------------------------------------- */
 footer{
@@ -565,7 +565,7 @@ footer{
 .family_site a{
     float: left;
     margin: 0 5px;
-    background: url(/img/tlj/common.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/common.png) left top no-repeat;
     font-size: 0;
 }
 .family_site .Cj_foodville{
@@ -626,7 +626,7 @@ footer{
 .fnb li{
     float: left;
     padding-left: 24px;
-    background: url(/img/tlj/common.png) -531px -60px no-repeat;
+    background: url(/portfolio/img/tlj/common.png) -531px -60px no-repeat;
     margin-bottom: 10px;
 }
 /* .fnb a{display: inline-block;} */
@@ -709,7 +709,7 @@ footer .info .business-name{float: left;}
     .nav .gnb_shop .depth1:hover{background-position: -300px -550px;}
     .nav:hover{
         height: 193px;
-        background: url(/img/tlj/bg_gnb_over.png) 0% 100% repeat;
+        background: url(/portfolio/img/tlj/bg_gnb_over.png) 0% 100% repeat;
         transition-duration: 0.3s;
     }
     .all:hover .depth2{
