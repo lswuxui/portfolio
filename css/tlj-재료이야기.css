@@ -113,7 +113,7 @@ fieldset{
     display: inline-block;
     margin: 6px 0 0 12px;
     padding-bottom: 1px;
-    background: url(/img/tlj/menu.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/menu.png) left top no-repeat;
     font-size: 0;
     color: #32271d;
     overflow: hidden;
@@ -153,7 +153,7 @@ fieldset{
     top: -49px;
     width: 63px;
     height: 68px;
-    background: url(/img/tlj/menu_point.png) no-repeat 0 0;
+    background: url(/portfolio/img/tlj/menu_point.png) no-repeat 0 0;
 }
 /* ----------------------------------------------------------- */
 /* ----------------------네비부분------------------------------- */
@@ -176,7 +176,7 @@ fieldset{
 
 .nav:hover{
     height: 193px;
-    background: url(/img/tlj/bg_gnb_over.png) 0% 100% repeat;
+    background: url(/portfolio/img/tlj/bg_gnb_over.png) 0% 100% repeat;
     transition-duration: 0.3s;
 }
 .all:hover .depth2{
@@ -218,7 +218,7 @@ fieldset{
     width: 100%;
     height: 18px;
     padding: 30px 0 15px 0;
-    background: url(/img/tlj/gnb.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/gnb.png) left top no-repeat;
     font-size: 0;
 }
 .nav .depth1:first-child {
@@ -273,7 +273,7 @@ fieldset{
     height: 14px;
     font-size: 14px;
     color: #666;
-    background:url(/img/재료/arrow_path.png) 7px 3px no-repeat;
+    background:url(/portfolio/img/재료/arrow_path.png) 7px 3px no-repeat;
     text-decoration: none;
 }
 .page_title{
@@ -302,7 +302,7 @@ fieldset{
     width: 100%;
     height: 25px;
     font-size: 12px;
-    background: url(/img/재료/page_title.png) no-repeat left top;
+    background: url(/portfolio/img/재료/page_title.png) no-repeat left top;
     text-indent: -999em;
 }
 /* ----------------------------------------------------------------- */
@@ -395,7 +395,7 @@ footer{
 .family_site a{
     float: left;
     margin: 0 5px;
-    background: url(/img/tlj/common.png) left top no-repeat;
+    background: url(/portfolio/img/tlj/common.png) left top no-repeat;
     font-size: 0;
 }
 .family_site .Cj_foodville{
@@ -456,7 +456,7 @@ footer{
 .fnb li{
     float: left;
     padding-left: 24px;
-    background: url(/img/tlj/common.png) -531px -60px no-repeat;
+    background: url(/portfolio/img/tlj/common.png) -531px -60px no-repeat;
     margin-bottom: 10px;
 }
 /* .fnb a{display: inline-block;} */
