@@ -75,12 +75,12 @@ header{
     width: 640px;
 }
 .icon{
-    transition: none;
-    position: relative
+    position: static;
     opacity: 0.5;
     display: flex;
-    left: 50%;
     gap: 5px;
+    transform: none;
+    -ms-transform: none;
 }
 .text{margin-left: 0;}
 .text >p{display: none;}
