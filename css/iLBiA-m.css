@@ -62,13 +62,13 @@ header{
     position: relative;
     width: 100%;
     top: 400px;
-    height:300px;
+    height:350px;
     overflow: hidden;
 }
 .inner-1{
     display: block;
     width: 640px;
-    height: 300px;
+    height: 350px;
     overflow: hidden;
 }
 .imgcollect{
@@ -76,12 +76,14 @@ header{
 }
 .icon{
     transition: none;
+    position: relative
     opacity: 0.5;
     display: flex;
-    left: 35%;
+    left: 50%;
     gap: 5px;
 }
 .text{margin-left: 0;}
+.text >p{display: none;}
 .imgset img{
     width: 150px;
     height: 150px;
