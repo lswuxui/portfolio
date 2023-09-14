@@ -283,7 +283,7 @@ header{
 }
 .fimg a img{
     width: 100%;
-    height: 250px;
+    height: 100%;
     vertical-align: top;
 }
 footer{
