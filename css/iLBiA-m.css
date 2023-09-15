@@ -1,15 +1,16 @@
 @charset "UTF-8";
 body{min-width: 100%;}
 .material-symbols-outlined{
-    display: inline-block;
+    display: block;
     float: right;
-    margin: 25px 10px 0 0;
+    margin: 20px 10px 0 0;
 }
 header{
     display: inline-block;
     background: #fff;
     min-width: 100%;
     width: 100%;
+    height: 50px;
 }
 #toggle:checked ~ #top{
     display: flex;
@@ -38,7 +39,7 @@ header{
 .r-nav{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     outline: 1px solid #cbdeff;
     margin: 20px 0;
 }
@@ -47,84 +48,134 @@ header{
 .slider{
     position: absolute;
     width: 100%;
-    top: 60px;
+    top: 50px;
 }
 .myslide{
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 .slider1{
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
+/* ------------------------------ */
 .sec1{
     display: block;
     position: relative;
     width: 100%;
-    top: 400px;
-    height:350px;
+    top: 350px;
+    height:300px;
     overflow: hidden;
 }
 .inner-1{
     display: block;
-    width: 640px;
-    height: 350px;
+    width: 100%;
+    height: 300px;
     overflow: hidden;
 }
+.text{
+    line-height: 15px;
+    width: 110px;
+}
+.tx{padding-left: 20px;}
+.tx h1{font-size: 25px;}
+.tx p{font-size: 12px;}
+.imgset{display: flex;}
+.imgcollect li{
+    width: 300px;
+    height: 300px;
+}
+
+/* -------------------------------------------- */
+.slidebox{
+    display: flex;
+    justify-content: center;
+}
 .imgcollect{
-    width: 640px;
-    gap: 0;
+    width: 350px;
+    height: 100%;
+    gap: 10px;
 }
 .icon{
     position: static;
     opacity: 0.5;
     display: flex;
     gap: 5px;
+    justify-content: center;
     transform: none;
     -ms-transform: none;
 }
-.text{margin-left: 0;}
-.text >p{display: none;}
-.imgset img{
-    width: 150px;
-    height: 150px;
+.text{
+    font-size: 12px;
+    margin-left: 0;
 }
+.text >p{display: none;}
+.text .sale{justify-content: center;}
+.imgset img{
+    width: 120px;
+    height: 120px;
+}
+.mg{
+    width: 16px;
+    height: 16px;
+}
+/* ------------------------------------------------- */
 .sec2{
-    top: 400px;
+    top: 350px;
     position:relative;
 }
 .riview{width: 100%;}
-.riview h1{padding: 0;}
+.riview h1{
+    padding:0 20px;
+    font-size: 25px;
+}
+.slid{
+    margin: auto;
+    height: 200px;
+    width: 450px;
+}
+.list{gap: 25px;}
 .rset{
-    min-width: 150px;
+    min-width: 100px;
+}
+.rset > img{
+    width: 100px;
+    height: 100px;
 }
 .product{
     width: 100%;
-    padding: 20px 0;
 }
-.hset{gap: 20px;}
+.r_set{display: none;}
+.hset{
+    margin-top: 30px;
+    gap: 50px;
+}
 .hover{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 .hover .p{
     font-size: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .hover a img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 .hset .hover:hover{padding-bottom: 0;}
-.product h1{padding: 0;}
+.product h1{
+    padding:0 20px;
+    font-size: 25px;
+}
+/* ------------------------------------------------ */
 .fimg a img{
     position: relative;
     height: 100px;
-    top: 400px;
+    top: 350px;
 }
 footer{
     position: relative;
-    top: 400px;
+    top: 350px;
     height: 200px;
     padding-top: 0;
 }
