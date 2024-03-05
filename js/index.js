@@ -153,3 +153,6 @@ function carousel() {
     setTimeout(carousel, 300);
 }
 // ------------------------------------------------------
+window.addEventListener("wheel", function(e){
+  e.preventDefault();
+},{passive : false});
