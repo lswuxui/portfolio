@@ -1,20 +1,5 @@
 @charset "UTF-8";
-*{
-  transition-duration: 0.8s;
-  list-style: none;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: 0;
-  vertical-align: baseline;
-  /* outline: 1px solid red; */
-}
-body{ 
-  margin: 0;
-  padding: 0;
-}
-
+*{outline: 1px solid red;}
 /* ---------------- section분할 ----------------- */
 html {
   overflow: hidden;
@@ -29,20 +14,19 @@ html, body {
 }
 
 .section {
-  min-width: 1500px;
-  min-height: 1000px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 /* ----------------------------------------------- */
-
 /* ------------------- scroll 유도 ---------------- */
 .scroll-downs {
   position: absolute;
-  top: 800px;
   right: 0;
-  bottom: 0;
+  bottom: 2vh;
   left: 0;
   margin: 0 auto;
-  width :34px;
+  width :35px;
   height: 55px;
 }
 .mousey {
@@ -67,11 +51,10 @@ html, body {
 @keyframes scroll {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  100% { transform: translateY(20px); opacity: 0;}
 }
 .scroll-downs .a{color: #fff;}
 /* ------------------------------------------------------ */
-
 /* ----------------------- sec1 -------------------------- */
 #section1{
   position: relative;
@@ -80,24 +63,14 @@ html, body {
 }
 .page1 {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
     line-height: 120px;
     opacity: 70%;
 } 
-.title {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    color: #fff;
-    font-weight: 100;
-    font-size: 3em;
-    font-family: 'Pacifico', cursive;
-    overflow: hidden;
-}
+/* -----------1섹션 배경----------------------------------------- */
 .noite {
     background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
     width: 100%;
@@ -164,8 +137,8 @@ html, body {
     position: absolute;
     right: 200px;
     top: 150px;
-    width: 120px;
-    height: 120px;
+    width: 14vh;
+    height: 14vh;
     border-radius: 50%;
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
     background-color: #fff;
@@ -178,8 +151,8 @@ html, body {
     background-image: url(https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgMoon.png);
     background-position: center;
     background-size: 100%;
-    width: 100%;
-    height: 100%;
+    width: 14vh;
+    height: 14vh;
     position: absolute;
     left: 0;
     top: 0;
@@ -279,31 +252,30 @@ html, body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 80px;
-    margin-top: 400px;
+    margin: 20px;
+    /* margin-top: 400px; */
 }
 .page1-1 h1{
-    font-size: 80px;
+    font-size: 8vh;
     color: white;
 }
 .page1-1 p{
-    font-size: 50px;
+    font-size: 6vh;
     color: white;
 }
 /* ------------------------------------------------------- */
-
 /* ----------------------- sec2 -------------------------- */
 #section2{
   display: flex;
   position: relative;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background: -webkit-linear-gradient(top, rgb(0, 0, 0) 30%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
   min-width: 1500px;
 }
 #section2 > h1{
   left: 0;
-  font-size: 80px;
+  font-size: 8vh;
   color: aliceblue;
   margin: 30px;
   z-index: 1;
@@ -311,7 +283,7 @@ html, body {
 .page2-1{
   display: flex;
   position:relative;
-  top: 50px;
+  top: 4vh;
   width: 100%;
   height: 65%;
   gap: 50px;
@@ -323,27 +295,26 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 60vh;
   width: 100%;
   border-radius: 50%;
-  /* transform: rotate(10deg); */
 }
 .page2-1 .img{border-radius: 50%;}
 .page2-1 .textarea span {
   color: rgb(195, 106, 223);
-  font-size: 30px;
+  font-size: 4vh;
 }
 .page2-1 .textarea p{
   margin: 30px 20px;
   color: #fff;
-  font-size: 23px;
+  font-size: 3vh;
 }
 .bbg{
   position: sticky;
   bottom: 5px;
   border-radius: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 .imgset{
   display: flex;
@@ -352,8 +323,8 @@ html, body {
 }
 img{
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 6vw;
+  height: 10vh;
 }
 .imgset img:nth-child(1){background-color: white;}
 .imgset img:nth-child(1):hover{transform: rotateY(180deg); opacity: 0.3;}
@@ -376,176 +347,36 @@ img{
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  height: 14vh;
 }
 progress{
   display: none;
-  width: 80px;
+  width: 6vw;
 }
 /* ------------------------------------------------------- */
-
 /* ----------------------- sec3 -------------------------- */
 #section3 {
   background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
   color: white;
 }
 #section3 > h1{
-    font-size: 80px;
+  font-size: 8vh;
+  margin: 30px;
 }
 #section3 > p{color: #c4baba;}
 .ox{
   display: flex;
-  outline: solid 1px rgb(223, 119, 255);
-  height: 700px;
-  width: 800px;
-  gap: 50px;
-}
-.sec{margin-top: 30px;}
-.ilbia{
-  background-color: white;
-  width: 50px;
-  height: 50px;
-}
-.sec1{margin-bottom: 30px;}
-.slide{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #111131;
-  width: 50px;
-  height: 50px;
-}
-.slider{
-  display: none;
-  width: 550px;
-  height: 350px;
-}
-.myslide{
-  border-radius: 0;
-  position: absolute;
-  width: 550px;
-  height: 350px;
-}
-.sec1 :hover ~ .slider{
-  display: block;
-}
-/* --------------------------------------- */
-.sec2{margin-bottom: 30px;}
-.videos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #111131;
-  width: 50px;
-  height: 50px;
-}
-.video{
-  display: none;
-  width: 550px;
-  height: 350px;
-}
-.vid{
-  width: 550px;
-  height: 350px;
-}
-.sec2 :hover ~ .video{
-  display: block;
-}
-/* ----------------------------------------- */
-.do{
-  width: 550px;
-  display: none;
-}
-.sld{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #111131;
-  width: 50px;
-  height: 50px;
-}
-.rset > img{
-  display: block;
-  -webkit-user-drag: none;
-  width: 150px;
-  height: 150px;
-}
-.r_set img{
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.rset p{margin: 10px 5px;}
-.rset > P:nth-child(2){
-  font-size: 8px;
-  font-weight: 300;
-}
-.rset p:nth-child(3){
-  display: block;
-  color: #686768;
-  font-size: 5px;
-}
-.r_set{
-  padding: 5px 20px;
-  display: flex;
-  font-size: 6px;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 2px solid#fff;
-  font-weight: 500;
-  color: #416de6;
-}
-.i{border-radius: 0;}
-.slid{
- width: 100%;
- overflow: hidden;
-}
-.list{
   width: 100%;
-  display: flex;
-  gap: 10px;
-  transform: translate(0, 0);
+  gap: 50px;
+  padding: 50px;
 }
-.rset{
-  display: flex;
-  flex-direction: column;
-  background-color:#dcebff;
-  min-width: 150px;
-  overflow: hidden;
-  border-radius: 5%;
-  list-style: none;
-  user-select: none;
-}
-.sec3 :hover ~ .do{
-  display: block;
-}
+
 .hom{
   border-radius: 0;
-  height: 700px;
-  width: 700px;
+  height: 40vh;
+  width: 20vw;
 }
-      /* --------------portfolio 1----------------- */
-
-.logo{
-  background: white;
-  box-shadow: 1px 1px 30px white;
-}
-.hov{display: none;}
-.web{
-  border-radius: 0;
-  width: 200px;
-  height: 300px;
-}
-input{display: none;}
-#logo:checked ~ .hov{
-  display: block;
-  border-radius: 0;
-}
-/* ------------------------------------------------------- */
-
+/* ----------------------------------------------- */
 /* ----------------------- sec4 -------------------------- */
 #section4 {
   display: flex;
@@ -569,16 +400,16 @@ input{display: none;}
 .contect {
   font-family: neon;
   color: #FB4264;
-  font-size: 9vw;
-  line-height: 9vw;
+  font-size: 20vh;
+  line-height:20vh;
   text-shadow: 0 0 3vw #F40A35;
 }
 
 .with {
   font-family: neon;
   color: #426DFB;
-  font-size: 9vw;
-  line-height: 9vw;
+  font-size: 16vh;
+  line-height: 16vh;
   text-shadow: 0 0 3vw #2356FF;
 }
 
@@ -621,7 +452,7 @@ input{display: none;}
 
 .neon_effect p {
   text-align: center;
-  font-size: 50px;
+  font-size: 5vh;
   margin: 50px;
   transition: all 0.4s;
 }
@@ -643,7 +474,7 @@ input{display: none;}
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  font-size: 30px;
+  font-size: 3vh;
   color: rgb(149, 248, 255);
 }
 /* ------------------------------------------------------- */
