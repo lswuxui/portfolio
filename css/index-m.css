@@ -38,6 +38,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+.bgh{
+    width: 100vw;
+    /* height: 100vw; */
+}
 #section2 > h1{
     font-size: 4vh;
     text-align: center;
