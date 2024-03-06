@@ -88,6 +88,8 @@ body{
     height: 40vw;
     width: 20vw;
   }
+  .portfolio > h1{font-size: 2vw;}
+  .portfolio > p{font-size: 1vw;}
   /* ------------------------------- */
 .contect{
     font-size: 14vw;
