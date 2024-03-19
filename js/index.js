@@ -156,3 +156,7 @@ function carousel() {
 window.addEventListener("wheel", function(e){
   e.preventDefault();
 },{passive : false});
+
+$(selector).mCustomScrollbar();
+$(selector).removeClass("mCustomScrollbar");
+$(selector).css("-webkit-overflow-scrolling","touch");
