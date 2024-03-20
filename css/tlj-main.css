@@ -428,13 +428,13 @@ body .main1 .floatright{
     margin-bottom: 30px;
 }
 body .main2 .lfloat{
-    width: 596px;
+    width: 100%;
 }
 .lfloat{float: left !important;}
 .store_find{
     display: block;
     position: relative;
-    width: 596px;
+    width: 100%;
     height: 263px;
     background: url(/portfolio/img/tlj/img_store_find.jpg) left top no-repeat;
 }
