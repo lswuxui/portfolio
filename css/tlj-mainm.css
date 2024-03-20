@@ -253,7 +253,10 @@ body .main1 .floatright{
     width: auto;
     height: 100%;
 }
-.main2{margin-bottom: 0;}
+.main2{
+    width: 52vh;
+    margin-bottom: 0;
+}
 .main3{margin-bottom: 0;}
 .main3 .rfloat{
     width: 100%;
@@ -335,21 +338,3 @@ footer .footmenu li a strong img{
 
 .fot{padding-top: 0;}
 .business-name{display: none;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .list ul li:nth-child(2), 
-.list ul li:nth-child(3){display: none;} */
