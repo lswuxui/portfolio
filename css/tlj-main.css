@@ -421,9 +421,9 @@ body .main1 .floatright{
 /* ------------------------------------------------------------------------------------- */
 /* -----------------------------메인 2------------------------------- */
 .main2{
+    display: flex;
     content: "";
     clear: both;
-    display: inline-block;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -449,7 +449,10 @@ body .main2 .lfloat{
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
 }
-.srch_form{padding: 156px 0 0 205px;}
+.srch_form{
+    display: flex;
+    padding: 156px 206px;
+}
 .ipt02{
     opacity: 1;
     text-indent: 7px;
@@ -466,6 +469,10 @@ body .main2 .lfloat{
     position: relative;
     width: 393px;
     float: right !important;
+}
+.brad{
+    width: 400px;
+    height:350px;
 }
 /* ---------------------------------------------------------------------- */
 .main3{
@@ -717,5 +724,4 @@ footer .info .business-name{float: left;}
         height: 193px;
         width: 100%;
     }
-    
 }
