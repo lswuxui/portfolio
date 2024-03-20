@@ -10,7 +10,6 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
-  
 }
 
 .section {
@@ -370,7 +369,7 @@ progress{
   gap: 50px;
   padding: 50px;
 }
-
+.portfolio > p{text-align: center;}
 .hom{
   border-radius: 0;
   height: 40vh;
