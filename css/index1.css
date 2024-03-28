@@ -585,6 +585,7 @@ progress {
 }
 .sec5 > a{
     color: #fff;
+    text-decoration-line: none;
 }
 .sec5 > p{
     margin-top: 9vh;
