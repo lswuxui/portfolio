@@ -5,12 +5,21 @@ const sliderBtn = document.querySelector('.slider__btn');
 const sliderBtnPrev = sliderBtn.querySelector('.slider__btn .prev');
 const sliderBtnNext = sliderBtn.querySelector('.slider__btn .next');
 const sliderDot = document.querySelector('.slider__dot');
+
+const IMAGE_WIDTH = 20;//한번 이동 시 IMAGE_WIDTH만큼 이동한다.//DOM
+const backBtn = document.querySelector(".back")
+const nextBtn = document.querySelector(".go")
+const images = document.querySelector(".slick-list")
+
 let currentIndex = 0;						
 let sliderWidth = sliderImg.offsetWidth, 	
     dotIndex = "",
     interval = 3000,						
     sliderTimer = "";						// setInterval 컨트롤 용, 빈문자열 변수 선언해놓기
 let sliderLength = document.querySelectorAll('.slider').length;
+
+let pages = 0;//현재 인덱스 번호
+let positionValue = 0;//images 위치값
 
 function init(){
     createDot();	
@@ -164,4 +173,3 @@ function div_layer(tr_name){
      break;
     }
    }
-   
