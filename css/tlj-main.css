@@ -706,8 +706,6 @@ footer .info .business-name{float: left;}
     vertical-align: top;
 }
 .footerWrap .info img{vertical-align: top;}
-
-/* 미디어 쿼리를 이용하여 모바일 기기 환경인지 판단하고 그에 따라 hover 스타일을 비활성화 방법 */
 @media(hover: hover) and (pointer: fine) {
     .nav .gnb_brand .depth1:hover{background-position: -300px 0px;}
     .nav .gnb_bread .depth1:hover{background-position: -300px -100px;}
