@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* {outline: solid 1px red;} */
+/* *{outline: solid 1px red;} */
 .research > span{font-size: 13px;}
 .border{
     font-size: 10px;
@@ -85,13 +85,6 @@ hr{width: 30vw;}
 .text>p{
     font-size: 1.5vh;
 }
-.sk{
-    width: 25vw;
-    margin-top: 4em;
-    position: relative;
-    height: 25px;
-    top: -3em;
-}
 .edu{margin: 0 0 0 20px;}
 .peo1{
     width: 50vw;
@@ -104,6 +97,13 @@ hr{width: 30vw;}
     left: 0;
     width: 100vw;
     height: 20vh;
+}
+.sk{
+    width: 25vw;
+    margin-top: 4em;
+    position: relative;
+    height: 25px;
+    top: -3em;
 }
 .adobe{font-size: 20px;}
 .html{font-size: 20px;}
@@ -171,6 +171,5 @@ progress{
     gap: 10px;
     margin: 10px 0;
 }
-.down1{display:none}
 #down1{margin-top: -8vw;}
 .dw11{display: none;}
