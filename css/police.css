@@ -850,6 +850,7 @@ tbody{
     background: url(/portfolio/img/police/ico_blue_arrow.png) no-repeat 0 0;
 }
 .sec3-3{
+    position: relative;
     width: 1200px;
     margin: 0 auto;
     top: 50px;
@@ -872,8 +873,8 @@ tbody{
     clear: both;
 }
 .info_link{
+    display: inline-block;
     width: 100%;
-    position: relative;
     height: 180px;
 }
 .info_link::before{
