@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{outline: solid 1px red;}
+/*{outline: solid 1px red;} */
 .research > span{font-size: 13px;}
 .border{
     font-size: 10px;
